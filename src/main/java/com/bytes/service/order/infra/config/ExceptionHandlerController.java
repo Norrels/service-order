@@ -1,8 +1,7 @@
 package com.bytes.service.order.infra.config;
 
-import com.bytes.service.order.contexts.kitchen.domain.models.ProductCategory;
-import com.bytes.service.order.contexts.kitchen.domain.models.UserRole;
-import com.bytes.service.order.contexts.payment.domain.models.PaymentType;
+import com.bytes.service.order.domain.models.ProductCategory;
+import com.bytes.service.order.domain.models.UserRole;
 import com.bytes.service.order.exceptions.BusinessException;
 import com.bytes.service.order.exceptions.ErrorMessageResponse;
 import com.bytes.service.order.exceptions.ErrorValidationField;
@@ -87,15 +86,6 @@ public class ExceptionHandlerController {
                     .body(new ErrorValidationField(
                             "Role",
                             "Cargo inválido, valores permitidos: " + enumValues(UserRole.values())
-                    ));
-        }
-
-        if (errorMessage.contains("PaymentType")) {
-            return ResponseEntity
-                    .status(HttpStatus.BAD_REQUEST)
-                    .body(new ErrorValidationField(
-                            "PaymentType",
-                            "Tipo de pagamento inválido, valores permitidos: " + enumValues(PaymentType.values())
                     ));
         }
 

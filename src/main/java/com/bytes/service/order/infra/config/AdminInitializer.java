@@ -1,8 +1,8 @@
 package com.bytes.service.order.infra.config;
 
-import com.bytes.service.order.contexts.kitchen.domain.models.User;
-import com.bytes.service.order.contexts.kitchen.domain.models.UserRole;
-import com.bytes.service.order.contexts.kitchen.domain.port.outbound.UserRepositoryPort;
+import com.bytes.service.order.domain.models.User;
+import com.bytes.service.order.domain.models.UserRole;
+import com.bytes.service.order.domain.outbound.UserRepositoryPort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
