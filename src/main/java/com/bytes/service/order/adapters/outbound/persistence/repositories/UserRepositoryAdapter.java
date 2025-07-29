@@ -2,7 +2,7 @@ package com.bytes.service.order.adapters.outbound.persistence.repositories;
 
 import com.bytes.service.order.domain.outbound.UserRepositoryPort;
 import com.bytes.service.order.domain.models.User;
-import com.bytes.service.order.utils.UserMapper;
+import com.bytes.service.order.mapper.UserMapper;
 
 import org.springframework.stereotype.Repository;
 

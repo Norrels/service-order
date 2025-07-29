@@ -4,7 +4,6 @@ import com.bytes.service.order.application.ProductService;
 import com.bytes.service.order.application.useCases.product.*;
 import com.bytes.service.order.domain.outbound.ProductRepositoryPort;
 import com.bytes.service.order.domain.outbound.UserRepositoryPort;
-import com.bytes.service.order.utils.ProductMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -29,11 +28,6 @@ public class ProductConfig {
     @Bean
     public FindProductByCategoryUseCase findProductByCategoryUseCase(ProductRepositoryPort productRepositoryPort) {
         return new FindProductByCategoryUseCase(productRepositoryPort);
-    }
-
-    @Bean
-    public FindProductDTOByIdUseCase findProductDTOByIdUseCase(ProductRepositoryPort productRepositoryPort, ProductMapper productMapper) {
-        return new FindProductDTOByIdUseCase(productRepositoryPort, productMapper);
     }
 
     @Bean

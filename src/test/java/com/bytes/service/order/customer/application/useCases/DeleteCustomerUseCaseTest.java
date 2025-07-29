@@ -1,6 +1,6 @@
 package com.bytes.service.order.customer.application.useCases;
 
-import com.bytes.service.order.application.useCases.DeleteCustomerUseCase;
+import com.bytes.service.order.application.useCases.customer.DeleteCustomerUseCase;
 import com.bytes.service.order.domain.models.Customer;
 import com.bytes.service.order.domain.ports.outbound.CustomerRepositoryPort;
 import com.bytes.service.order.exceptions.ResourceNotFoundException;

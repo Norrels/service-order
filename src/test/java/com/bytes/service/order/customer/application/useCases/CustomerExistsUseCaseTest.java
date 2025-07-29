@@ -1,6 +1,6 @@
 package com.bytes.service.order.customer.application.useCases;
 
-import com.bytes.service.order.application.useCases.CustomerExistsUseCase;
+import com.bytes.service.order.application.useCases.customer.CustomerExistsUseCase;
 import com.bytes.service.order.domain.models.Customer;
 import com.bytes.service.order.domain.ports.outbound.CustomerRepositoryPort;
 import org.junit.jupiter.api.BeforeEach;

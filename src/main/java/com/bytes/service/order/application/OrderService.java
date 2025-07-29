@@ -1,7 +1,8 @@
 package com.bytes.service.order.application;
 
 
-import com.bytes.service.order.application.useCases.*;
+import com.bytes.service.order.application.useCases.GetOrdersByStatusUseCase;
+import com.bytes.service.order.application.useCases.order.*;
 import com.bytes.service.order.domain.models.dtos.CreateOrderDTO;
 import com.bytes.service.order.domain.models.Order;
 import com.bytes.service.order.domain.models.OrderStatus;

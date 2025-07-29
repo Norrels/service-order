@@ -1,9 +1,9 @@
 package com.bytes.service.order.application;
 
-import com.bytes.service.order.application.useCases.CreateCustomerUseCase;
-import com.bytes.service.order.application.useCases.DeleteCustomerUseCase;
-import com.bytes.service.order.application.useCases.FindCustomerByCPFUseCase;
-import com.bytes.service.order.application.useCases.UpdateCustomerUseCase;
+import com.bytes.service.order.application.useCases.customer.CreateCustomerUseCase;
+import com.bytes.service.order.application.useCases.customer.DeleteCustomerUseCase;
+import com.bytes.service.order.application.useCases.customer.FindCustomerByCPFUseCase;
+import com.bytes.service.order.application.useCases.customer.UpdateCustomerUseCase;
 import com.bytes.service.order.domain.models.Customer;
 import com.bytes.service.order.domain.ports.inbound.CustomerServicePort;
 

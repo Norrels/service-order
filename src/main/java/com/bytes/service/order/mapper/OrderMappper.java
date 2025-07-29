@@ -1,10 +1,9 @@
 package com.bytes.service.order.mapper;
 
-import com.bytes.service.order.adapters.outbound.persistence.entity.OrderEntity;
-import com.bytes.service.order.adapters.outbound.persistence.entity.OrderItemEntity;
+import com.bytes.service.order.adapters.outbound.persistence.entities.OrderEntity;
+import com.bytes.service.order.adapters.outbound.persistence.entities.OrderItemEntity;
 import com.bytes.service.order.domain.models.Order;
 import com.bytes.service.order.domain.models.OrderItem;
-import com.bytes.service.order.shared.dtos.OrderDTO;
 import org.mapstruct.*;
 
 import java.util.List;
@@ -19,7 +18,6 @@ public interface OrderMappper {
     default Order toOrder(OrderEntity order) {
         return createOrder(order);
     }
-    OrderDTO toOrderDTO(Order order);
 
     List<OrderItem> toOrderItems(List<OrderItemEntity> items);
 
