@@ -3,7 +3,7 @@ package com.bytes.service.order.adapters.outbound.persistence.repositories;
 import com.bytes.service.order.domain.models.Product;
 import com.bytes.service.order.domain.models.ProductCategory;
 import com.bytes.service.order.domain.outbound.ProductRepositoryPort;
-import com.bytes.service.order.utils.ProductMapper;
+import com.bytes.service.order.mapper.ProductMapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
